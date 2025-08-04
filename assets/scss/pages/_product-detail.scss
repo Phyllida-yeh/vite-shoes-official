@@ -1,0 +1,100 @@
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+}
+
+.product-col-6 {
+    width: calc(100%/12*6);
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+@media (max-width:767px) {
+    .product-col-6 {
+        width: calc(calc(100%/12*12));
+    }
+}
+
+/* product descripe */
+.del-price {
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-Neutral-500;
+    padding-left: 8px;
+    ;
+}
+
+/* product color */
+.product-color {
+    width: 64px;
+    text-align: center;
+    color: $color-Neutral-600;
+}
+
+/* product size */
+
+.btn-product-size {
+    border: 1px solid $color-Neutral-300;
+    width: 160px;
+}
+
+.btn-product-size.active,
+.btn-product-size:hover {
+    border: 1px solid $color-Neutral-900;
+}
+
+/* product favorited reservation */
+
+.product-fav-rev .btn {
+    width: 50%;
+}
+
+@media (max-width:767px) {
+    .product-fav-rev .rev-md {
+        width: 88%;
+        font-size: 16px;
+        padding: 12px 0px;
+    }
+
+    .product-fav-rev .fav-md {
+        width: 12%;
+        font-size: 24px;
+        padding: 0px 0px;
+    }
+}
+
+/* product information */
+.product-info-title {
+    font-weight: 500;
+}
+
+
+
+.product-info-item p {
+    color: $color-Neutral-600;
+}
+
+.product-info-item {
+    border-bottom: $color-Neutral-300 1px solid;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .scroll-section {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .d-md-nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .col-md-card {
+        flex: 0 0 auto;
+        width: 80%;
+    }
+}

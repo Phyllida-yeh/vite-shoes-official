@@ -1,0 +1,21 @@
+/*元件*/
+
+.Product-List .bi {
+    padding-right: 0px;
+}
+
+
+.page-item .btn {
+    padding: 8px 15px;
+    font-weight: 400;
+}
+
+.page-item .active{
+    background-color: $color-primary-300;
+    font-weight: 500;
+}
+
+.side-bar-title a.active,
+.side-bar-title a:hover{
+    color: $color-primary-400;
+}

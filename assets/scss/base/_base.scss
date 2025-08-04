@@ -1,0 +1,36 @@
+/* 基本樣式 */
+/* 1.盒模型 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2.圖片 */
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 3.a標籤 */
+a {
+    /* text-underline-offset: 4px; */
+    display: block;
+    text-decoration: none;
+    color: $color-Neutral-900;
+    font-weight: 500;
+    /* border-bottom: 1px solid blue;
+    padding-bottom: 2px; */
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.body {
+    font-family: "Noto Sans TC", sans-serif;
+}
