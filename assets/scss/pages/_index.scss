@@ -1,4 +1,31 @@
-.index-title {
-  font-size: 100px;
-  color: purple;
+.index-banner {
+    background-image: url(/assets/images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 288.8px 0 288.8px 200px;
+
+    /* (設計稿高度800px-文字撐出的高度222.4px)/2=288.8*/
+}
+@media(max-width: 767px){
+    .index-banner{
+        padding: 155px 24px;
+            /* (設計稿高度480px-文字撐出的高度170px)/2=155*/
+        background-image: url(/assets/images/banner-sm.png);
+    }
+
+}
+
+.product {
+    position: relative;
+    .product-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 8px 12px;
+        background-color:$color-primary-100;
+        font-size: 14px;
+        color: $color-primary-400;
+    }
 }

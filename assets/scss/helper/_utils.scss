@@ -20,6 +20,9 @@
 p {@include h-style(16px, 500, 1.5);}
 .text-sm {@include h-style(14px, 500, 1.5);} */
 
+.text-center {
+    text-align: center;
+}
 
 
 .text-sm {
@@ -64,14 +67,16 @@ p {@include h-style(16px, 500, 1.5);}
 
 .Dispaly-1 {
     font-size: 64px;
+    font-weight: 700;
     line-height: 1.2;
-    letter-spacing: 5em;
+    letter-spacing: 0.05em;
 }
 
 .Dispaly-2 {
     font-size: 48px;
+    font-weight: 700;
     line-height: 1.2;
-    letter-spacing: 5em;
+    letter-spacing: 0.05em;
 }
 
 .h1 {
@@ -133,6 +138,10 @@ p {@include h-style(16px, 500, 1.5);}
 
     .h6-md {
         font-size: 16px;
+    }
+
+    .Dispaly-md-2{
+        font-size: 48px;
     }
 
 }
@@ -410,7 +419,9 @@ p {@include h-style(16px, 500, 1.5);}
 .mb-32 {
     margin-bottom: 32px;
 }
-
+.mb-40 {
+    margin-bottom: 40px;
+}
 .mb-48 {
     margin-bottom: 48px;
 }
