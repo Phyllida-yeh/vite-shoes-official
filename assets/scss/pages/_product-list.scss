@@ -15,6 +15,17 @@
     font-weight: 500;
 }
 
+
+.page-bi .btn {
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+i.bi.bi-chevron-right,
+i.bi.bi-chevron-left {
+    padding-right: 0px;
+}
+
 .side-bar-title a.active,
 .side-bar-title a:hover{
     color: $color-primary-400;

@@ -20,6 +20,10 @@
 .h6 {@include h-style(16px);}
 p {@include h-style(16px, 500, 1.5);}
 .text-sm {@include h-style(14px, 500, 1.5);} */
+.text-center {
+  text-align: center;
+}
+
 .text-sm {
   font-size: 14px;
   font-weight: 500;
@@ -61,14 +65,16 @@ p {@include h-style(16px, 500, 1.5);}
 
 .Dispaly-1 {
   font-size: 64px;
+  font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 5em;
+  letter-spacing: 0.05em;
 }
 
 .Dispaly-2 {
   font-size: 48px;
+  font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 5em;
+  letter-spacing: 0.05em;
 }
 
 .h1 {
@@ -125,6 +131,9 @@ p {@include h-style(16px, 500, 1.5);}
   }
   .h6-md {
     font-size: 16px;
+  }
+  .Dispaly-md-2 {
+    font-size: 48px;
   }
 }
 @media (max-width: 576px) {
@@ -377,6 +386,10 @@ p {@include h-style(16px, 500, 1.5);}
 
 .mb-32 {
   margin-bottom: 32px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 .mb-48 {
@@ -736,7 +749,7 @@ a {
 
 p {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.05em;
 }
@@ -790,6 +803,10 @@ p {
   border: 1px solid #212529;
 }
 
+.btn-primary {
+  background-color: #C0FA73;
+}
+
 .footer {
   text-align: center;
 }
@@ -798,9 +815,34 @@ p {
   padding-top: 32px;
 }
 
-.index-title {
-  font-size: 100px;
-  color: purple;
+.index-banner {
+  background-image: url(/assets/images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  padding: 288.8px 0 288.8px 200px;
+  /* (設計稿高度800px-文字撐出的高度222.4px)/2=288.8*/
+}
+
+@media (max-width: 767px) {
+  .index-banner {
+    padding: 155px 24px;
+    /* (設計稿高度480px-文字撐出的高度170px)/2=155*/
+    background-image: url(/assets/images/banner-sm.png);
+  }
+}
+.product {
+  position: relative;
+}
+.product .product-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 12px;
+  background-color: #F5FEE7;
+  font-size: 14px;
+  color: #57A203;
 }
 
 /*元件*/
