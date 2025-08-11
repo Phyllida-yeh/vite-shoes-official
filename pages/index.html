@@ -1,21 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/dog.jpg" style="width: 300px;" alt="cat">
-    <p>解壓縮的概念</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+  <%- include('./layout/header'); -%>
+    <!-- 首頁banner區塊 -->
+    <header class="index-banner text-neutral-white">
+      <div>
+        <h1 class="Dispaly-1 Dispaly-md-2 mb-16 mb-md-8">URBNSTEP</h1>
+        <h2 class="h3 h5-md mb-48 mb-md-32">Your Step, Your Statement</h2>
+        <button type="button" class="btn btn-primary">立即選購</button>
+      </div>
+    </header>
+    <main class="container">
+      <!-- 新品上市 py-64 -->
+      <section class="py-64">
+        <div class="text-center mb-32">
+          <h3 class="Dispaly-2 mb-12">New Arrival</h3>
+          <h4 class="h2">新品上市</h4>
+        </div>
+
+        <div class="row">
+          <div class="col-6 mb-40">
+            <a href="#">
+              <img class="mb-12" src="/assets/images/new-1.png" alt="product-blue">
+              <h2 class="h5 mb-4">PLATFORM 404</h2>
+              <p class="Label-md">NT$2,600</p>
+            </a>
+          </div>
+          <div class="col-6 mb-40">
+            <a href="#">
+              <img class="mb-12" src="/assets/images/new-2.png" alt="product-blue">
+              <h2 class="h5 mb-4">PLATFORM 404</h2>
+              <p class="Label-md">NT$2,600</p>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <img class="mb-12" src="/assets/images/new-3.png" alt="product-blue">
+              <h2 class="h5 mb-4">PLATFORM 404</h2>
+              <p class="Label-md">NT$2,600</p>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <img class="mb-12" src="/assets/images/new-4.png" alt="product-blue">
+              <h2 class="h5 mb-4">PLATFORM 404</h2>
+              <p class="Label-md">NT$2,600</p>
+            </a>
+          </div>
+
+      </section>
+      <!-- 熱銷補貨 py-64-->
+      <section class="py-64">
+        <h3 class="h2 mb-16">熱銷補貨</h3>
+        <div class="row">
+          <div class="col-3">
+            <a class="product" href="#">
+              <span class="product-text">人氣 No.1</span>
+              <img src="/assets/images/product-3.png" alt="product-3">
+            </a>
+          </div>
+          <div class="col-3">
+            <a class="product" href="#">
+              <span class="product-text">人氣 No.1</span>
+              <img src="/assets/images/product.png" alt="product-blue">
+            </a>
+          </div>
+          <div class="col-3">
+            <a class="product" href="#">
+              <span class="product-text">人氣 No.1</span>
+              <img src="/assets/images/product-6.png" alt="product-blue">
+            </a>
+          </div>
+          <div class="col-3">
+            <a class="product" href="#">
+              <span class="product-text">人氣 No.1</span>
+              <img src="/assets/images/product-4.png" alt="product-blue">
+            </a>
+          </div>
+
+      </section>
+      <!-- 聯名banner py-48-->
+      <!-- 依系列選購 py-64-->
+      <!-- 穿搭靈感 py-64-->
+
+
+
+    </main>
+
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
